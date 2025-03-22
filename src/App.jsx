@@ -11,7 +11,7 @@ import Male from './Component/Male';
 import Femal from './Component/Femal';
 import Dandruff from './Component/Dandruff';
 import Alopecia from './Component/Alopecia';
-import About from './Component/about';
+import About from './Component/About';
 import Homeopathy from './Component/Homeopathy';
 
 
@@ -40,8 +40,6 @@ function App() {
           <Route path='/Homeopathy' element={<Homeopathy />}></Route>
         </Routes>
         <Footer />
-
-
       </Router>
 
     </>
