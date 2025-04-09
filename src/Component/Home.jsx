@@ -31,7 +31,7 @@ function Home() {
                                 Comprehensive Medical Care Tailored To You.
                             </h1>
                             <p className="text-gray-600 mb-6">
-                                Welcome, We Are Dedicated To Providing Personalized And Compassionate Healthcare.
+                                Welcome, I am Dedicated To Providing Personalized And Compassionate Healthcare.
                             </p>
                             <button className="bg-[#A5487D] text-white font-bold py-3 px-8 rounded-full">
                                 Book An Appointment
@@ -168,7 +168,7 @@ function Home() {
                                 Your Health Is Our Priority. Explore Our Services And Find The Care You Need.
                             </h3>
                             <p className="text-gray-600 text-sm sm:text-base mb-6 text-center md:text-left">
-                                Discover the heart of our hospital, where dedicated professionals work together
+                                Discover the heart of our clinic, where Dedicated professionals work together
                                 to provide exceptional healthcare services with compassion and expertise.
                             </p>
 

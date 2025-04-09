@@ -87,12 +87,13 @@ function Header() {
                   <Link to='/Femal' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Female Pattern Baldness</Link>
                   <Link to='/Alopecia' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Alopecia</Link>
                   <Link to='/Dandruff' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Dandruff Treatment</Link>
+                  <Link to='/SkinDieses' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Skin Disease </Link>
                 </div>
               )}
             </div>
 
             <Link to="/Skin" className="hover:text-[#9d4d79]">Skin Treatment</Link>
-            <Link to="/About" className="hover:text-[#9d4d79]">About</Link>
+            <Link to="/About" className="hover:text-[#9d4d79]">About</Link> 
             <Link to="/ContactForm" className="hover:text-[#9d4d79]">Contact</Link>
           </div>
         </div>
@@ -140,6 +141,7 @@ function Header() {
               <Link to='/Femal' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsMenuOpen(false)}>Female Pattern Baldness</Link>
               <Link to='/Alopecia' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsMenuOpen(false)}>Alopecia</Link>
               <Link to='/Dandruff' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsMenuOpen(false)}>Dandruff Treatment</Link>
+              <Link to='/SkinDieses' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsMenuOpen(false)}>Dandruff Treatment</Link>
             </div>
           )}
 

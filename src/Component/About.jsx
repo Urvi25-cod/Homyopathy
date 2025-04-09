@@ -77,7 +77,7 @@ const About = () => {
                         <img
                             src={women}
                             alt="Dr. Princy"
-                            className="rounded-lg shadow-md w-auto h-auto object-cover aspect-square"
+                            className="rounded-lg shadow-md  w-full h-[500px] object-cover aspect-square"
                         />
                     </div>
 

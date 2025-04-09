@@ -67,7 +67,7 @@ function Navbar() {
               </button>
               <div className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-50">
                 <div className="py-2">
-                  {["HairGrowth", "HairLoss", "Male", "Femal", "Alopecia", "Dandruff", "gynecological"].map((route) => (
+                  {["HairGrowth", "HairLoss", "Male", "Femal", "Alopecia", "Dandruff", "SkinDieses"].map((route) => (
                     <Link key={route} to={`/${route}`} className="block px-4 py-2 text-sm hover:bg-purple-500 hover:text-white flex justify-between">
                       {route.replace(/([A-Z])/g, " $1").trim()} <FontAwesomeIcon icon={faChevronRight} />
                     </Link>
@@ -105,7 +105,7 @@ function Navbar() {
           </button>
           {isHairDropdownOpen && (
             <div className="ml-4 space-y-2">
-              {["HairGrowth", "HairLoss", "Male", "Femal", "Alopecia", "Dandruff", "gynecological"].map((route) => (
+              {["HairGrowth", "HairLoss", "Male", "Femal", "Alopecia", "Dandruff", "SkinDieses"].map((route) => (
                 <Link key={route} to={`/${route}`} className="block text-sm hover:text-purple-500" onClick={closeMenu}>
                   {route.replace(/([A-Z])/g, " $1").trim()}
                 </Link>

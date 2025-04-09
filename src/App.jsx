@@ -13,6 +13,7 @@ import Dandruff from './Component/Dandruff';
 import Alopecia from './Component/Alopecia';
 import About from './Component/About';
 import Homeopathy from './Component/Homeopathy';
+import SkinDieses from './Component/SkinDieses';
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/Alopecia' element={<Alopecia />}></Route>
           <Route path='/Dandruff' element={<Dandruff />}></Route>
           <Route path='/Homeopathy' element={<Homeopathy />}></Route>
+          <Route path='/SkinDieses' element={<SkinDieses />}></Route>
         </Routes>
         <Footer />
       </Router>
