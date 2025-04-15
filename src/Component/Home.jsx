@@ -13,6 +13,8 @@ import {
 import p1 from '../images/p1.png';
 import OurHappyClients from './OurHappyClients';
 import women from '../images/women.png';
+import n3 from '../images/n3.png';
+
 
 library.add(faPhone, faHeart, faUser, faRunning, faBone, faCheck);
 
@@ -109,11 +111,12 @@ function Home() {
                             {/* Physiotherapy */}
                             <div className="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
                                 <div className="text-5xl text-gray-700 mb-4">
-                                    <FontAwesomeIcon icon="running" />  {/* Replace with Physiotherapy icon */}
+                                    {/* <FontAwesomeIcon icon="running" />  Replace with Physiotherapy icon */}
+                                    <img src={n3} className='w-15 h-15 '></img>
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-800 mb-2">Physiotherapy</h3>
+                                <h3 className="text-xl font-semibold text-gray-800 mb-2">Gynaecology </h3>
                                 <p className="text-gray-600 text-sm">
-                                    Treatment to restore, maintain, and make the most of a patient's mobility.
+                                Homeopathy is a natural, holistic system of medicine that offers effective treatment for various gynecological concerns.
                                 </p>
                             </div>
 
@@ -174,10 +177,7 @@ function Home() {
 
                             {/* List of Benefits */}
                             <ul className="space-y-3">
-                                <li className="flex items-center">
-                                    <FontAwesomeIcon icon="check" className="text-purple-500 mr-2" />
-                                    <p className="text-gray-700 text-sm sm:text-base">24 hours emergency assistance call</p>
-                                </li>
+                                
                                 <li className="flex items-center">
                                     <FontAwesomeIcon icon="check" className="text-purple-500 mr-2" />
                                     <p className="text-gray-700 text-sm sm:text-base">We are committed to providing healthcare service</p>
