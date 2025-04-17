@@ -15,6 +15,8 @@ import About from './Component/About';
 import Homeopathy from './Component/Homeopathy';
 import SkinDieses from './Component/SkinDieses';
 import Gynecological from './Component/Gynecological';
+import OtherDiseases from './Component/OtherDiseases';
+// import OtherDiseases from './Component/OtherDiseases';
 
 
 
@@ -42,6 +44,7 @@ function App() {
           <Route path='/Homeopathy' element={<Homeopathy />}></Route>
           <Route path='/SkinDieses' element={<SkinDieses />}></Route>
           <Route path='/Gynecological' element={<Gynecological />}></Route>
+          <Route path='/OtherDiseases' element={<OtherDiseases/>}></Route>
         </Routes>
         <Footer />
         

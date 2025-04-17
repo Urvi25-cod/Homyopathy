@@ -245,7 +245,7 @@ const Man1 = () => {
                         {/* Content for Homeopathic Treatment tab */}
                         <div className="text-gray-600">
                             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Homeopathic  Male Pattern Baldness Treatment</h2>
-                            <section>
+                            {/* <section>
                                 <p className="mb-4">Homeopathy offers remedies that aim to slow down hair loss and promote hair regrowth by addressing underlying causes like hormonal imbalances, stress, and poor scalp health. While homeopathic treatment for male pattern baldness (androgenetic alopecia) is not scientifically proven to completely restore lost hair, it may help in slowing down hair fall, improving scalp health, and strengthening existing hair.</p>
 
                                 <h2 className="text-xl font-bold mb-4">Common Homeopathic Remedies for Male Pattern Baldness</h2>
@@ -273,7 +273,7 @@ const Man1 = () => {
                                         <span className="font-semibold">Kali Carbonicum</span> - Suitable for hair loss due to deep-seated nutritional deficiencies or stress-related hair fall.
                                     </li>
                                 </ol>
-                            </section>
+                            </section> */}
 
                         </div>
                     </div>

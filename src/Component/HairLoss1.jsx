@@ -33,20 +33,20 @@ const HairLoss1 = () => {
       <div>
         {/* Tab Navigation */}
         <div className="border border-[#9d4d79] mb-4">
-                    <div className="flex flex-wrap md:flex-nowrap w-full">
-                        {['Overview', 'Causes', 'Symptoms', 'Homeopathic Tratment', 'Faqs'].map((tab, index, arr) => (
-                            <button
-                                key={tab}
-                                className={`flex-1 px-4 py-2 md:px-6 lg:px-3 lg:py-2 md:py-3 font-semibold text-sm md:text-base border-[#9d4d79]
+          <div className="flex flex-wrap md:flex-nowrap w-full">
+            {['Overview', 'Causes', 'Symptoms', 'Homeopathic Tratment', 'Faqs'].map((tab, index, arr) => (
+              <button
+                key={tab}
+                className={`flex-1 px-4 py-2 md:px-6 lg:px-3 lg:py-2 md:py-3 font-semibold text-sm md:text-base border-[#9d4d79]
                 ${index !== arr.length - 1 ? 'border-r border-b md:border-b-0  md:border-r' : ''} 
                 ${activeTab === tab ? 'text-white bg-[#9d4d79]' : 'text-gray-500 hover:text-gray-700'}`}
-                                onClick={() => handleTabClick(tab)}
-                            >
-                                {tab}
-                            </button>
-                        ))}
-                    </div>
-                </div>
+                onClick={() => handleTabClick(tab)}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+        </div>
 
         {/* Tab Content */}
         {activeTab === 'Overview' && (
@@ -112,8 +112,8 @@ const HairLoss1 = () => {
             <div className="container mx-auto py-8 px-4 max-w-3xl">
               {/* Causes of Hair Loss */}
               <section className="mb-8">
-                <h2 className="text-xl font-semibold mb-4">Causes of Hair Loss</h2>
-                <ol className="list-decimal pl-5">
+                
+                {/* <ol className="list-decimal pl-5">
                   <li className="mb-2">
                     <span className="font-medium">Genetics</span> - Family history of baldness.
                   </li>
@@ -135,11 +135,66 @@ const HairLoss1 = () => {
                   <li>
                     <span className="font-medium">Hairstyling & Chemicals</span> - Excessive heat, dye, or tight hairstyles.
                   </li>
-                </ol>
+                </ol> */}
+                <div className="">
+                  
+
+                  {/* Medical Conditions */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Medical Conditions</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Androgenetic alopecia: A common condition that causes hair loss due to hormonal imbalances.</li>
+                      <li>Thyroid disorders: Both hypothyroidism and hyperthyroidism can cause hair loss.</li>
+                      <li>Autoimmune diseases: Conditions like alopecia areata, lupus, and rheumatoid arthritis can cause hair loss.</li>
+                      <li>Skin conditions: Conditions like eczema, psoriasis, and dermatitis can cause hair loss.</li>
+                    </ul>
+                  </div>
+
+                  {/* Nutritional Deficiencies */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Nutritional Deficiencies</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Iron deficiency: Low iron levels can cause hair loss.</li>
+                      <li>Vitamin D deficiency: Vitamin D plays a role in hair growth, and deficiency can lead to hair loss.</li>
+                      <li>Protein deficiency: Lack of protein can cause hair loss.</li>
+                      <li>Other nutritional deficiencies: Deficiencies in vitamins like biotin, vitamin B12, and omega-3 fatty acids can also contribute to hair loss.</li>
+                    </ul>
+                  </div>
+
+                  {/* Lifestyle Factors */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Lifestyle Factors</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Stress: Physical or emotional stress can cause hair loss.</li>
+                      <li>Hairstyling: Excessive heat styling, tight hairstyles, and harsh chemical treatments can damage hair and lead to hair loss.</li>
+                      <li>Hair care: Using harsh hair care products or excessive shampooing can strip hair of its natural oils and lead to hair loss.</li>
+                    </ul>
+                  </div>
+
+                  {/* Hormonal Changes */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Hormonal Changes</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Pregnancy and childbirth: Hormonal changes during pregnancy and after childbirth can cause hair loss.</li>
+                      <li>Menopause: Hormonal changes during menopause can cause hair loss.</li>
+                    </ul>
+                  </div>
+
+                  {/* Other Factors */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Other Factors</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Genetics: Family history can play a role in hair loss.</li>
+                      <li>Aging: Hair loss is a natural part of aging.</li>
+                      <li>Medications: Certain medications, such as those used to treat depression, high blood pressure, and cancer, can cause hair loss.</li>
+                    </ul>
+                  </div>
+                </div>
+
               </section>
 
               {/* Simple Hair Loss Treatments */}
-              <section>
+              {/* <section>
                 <h2 className="text-xl font-semibold mb-4">Simple Hair Loss Treatments</h2>
                 <ul className="list-disc pl-5">
                   <li className="mb-2">
@@ -161,12 +216,12 @@ const HairLoss1 = () => {
                     <span className="font-medium">Avoid Harsh Chemicals</span> - Limit hair coloring and heat styling.
                   </li>
                 </ul>
-              </section>
+              </section> */}
 
               {/* Question at the Bottom */}
-              <p className="mt-8">
+              {/* <p className="mt-8">
                 Would you like specific solutions based on your hair type? <span className="text-xl">😊</span>
-              </p>
+              </p> */}
             </div>
           </div>
         )}
@@ -241,73 +296,101 @@ const HairLoss1 = () => {
             {/* Content for Homeopathic Treatment tab */}
             <div className="text-gray-600">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Homeopathic Hair Loss Treatment</h2>
-
-              <div className="mb-6">
-                <div className="flex items-center mb-2">
-                  <span className="mr-2">1.</span>
-                  <span className="font-semibold">Thuja Occidentalis</span>
+              {/* <div>
+                <div className="mb-6">
+                  <div className="flex items-center mb-2">
+                    <span className="mr-2">1.</span>
+                    <span className="font-semibold">Thuja Occidentalis</span>
+                  </div>
+                  <ul className="list-disc pl-5 text-gray-700">
+                    <li>Best for hair loss due to dandruff or scalp infections.</li>
+                    <li>Helps with dry, frizzy hair and hair thinning.</li>
+                  </ul>
                 </div>
-                <ul className="list-disc pl-5 text-gray-700">
-                  <li>Best for hair loss due to dandruff or scalp infections.</li>
-                  <li>Helps with dry, frizzy hair and hair thinning.</li>
-                </ul>
-              </div>
 
-              <div className="mb-6">
-                <div className="flex items-center mb-2">
-                  <span className="mr-2">2.</span>
-                  <span className="font-semibold">Phosphorus</span>
+                <div className="mb-6">
+                  <div className="flex items-center mb-2">
+                    <span className="mr-2">2.</span>
+                    <span className="font-semibold">Phosphorus</span>
+                  </div>
+                  <ul className="list-disc pl-5 text-gray-700">
+                    <li>Useful for excessive hair fall with dandruff.</li>
+                    <li>Works well if hair loss is due to stress or weakness.</li>
+                  </ul>
                 </div>
-                <ul className="list-disc pl-5 text-gray-700">
-                  <li>Useful for excessive hair fall with dandruff.</li>
-                  <li>Works well if hair loss is due to stress or weakness.</li>
-                </ul>
-              </div>
 
-              <div className="mb-6">
-                <div className="flex items-center mb-2">
-                  <span className="mr-2">3.</span>
-                  <span className="font-semibold">Silicea</span>
+                <div className="mb-6">
+                  <div className="flex items-center mb-2">
+                    <span className="mr-2">3.</span>
+                    <span className="font-semibold">Silicea</span>
+                  </div>
+                  <ul className="list-disc pl-5 text-gray-700">
+                    <li>Strengthens weak, brittle hair.</li>
+                    <li>Good for hair fall due to poor nutrition or weak immunity.</li>
+                  </ul>
                 </div>
-                <ul className="list-disc pl-5 text-gray-700">
-                  <li>Strengthens weak, brittle hair.</li>
-                  <li>Good for hair fall due to poor nutrition or weak immunity.</li>
-                </ul>
-              </div>
 
-              <div className="mb-6">
-                <div className="flex items-center mb-2">
-                  <span className="mr-2">4.</span>
-                  <span className="font-semibold">Lycopodium</span>
+                <div className="mb-6">
+                  <div className="flex items-center mb-2">
+                    <span className="mr-2">4.</span>
+                    <span className="font-semibold">Lycopodium</span>
+                  </div>
+                  <ul className="list-disc pl-5 text-gray-700">
+                    <li>Effective for hair loss due to hormonal imbalance.</li>
+                    <li>Works well for women after pregnancy or menopause.</li>
+                  </ul>
                 </div>
-                <ul className="list-disc pl-5 text-gray-700">
-                  <li>Effective for hair loss due to hormonal imbalance.</li>
-                  <li>Works well for women after pregnancy or menopause.</li>
-                </ul>
-              </div>
 
-              <div className="mb-6">
-                <div className="flex items-center mb-2">
-                  <span className="mr-2">5.</span>
-                  <span className="font-semibold">Natrum Muriaticum</span>
+                <div className="mb-6">
+                  <div className="flex items-center mb-2">
+                    <span className="mr-2">5.</span>
+                    <span className="font-semibold">Natrum Muriaticum</span>
+                  </div>
+                  <ul className="list-disc pl-5 text-gray-700">
+                    <li>Helps with hair loss caused by stress, grief, or emotional trauma.</li>
+                    <li>Also good for oily scalp and dandruff-related hair fall.</li>
+                  </ul>
                 </div>
-                <ul className="list-disc pl-5 text-gray-700">
-                  <li>Helps with hair loss caused by stress, grief, or emotional trauma.</li>
-                  <li>Also good for oily scalp and dandruff-related hair fall.</li>
-                </ul>
-              </div>
 
-              <div className="mb-6">
-                <div className="flex items-center mb-2">
-                  <span className="mr-2">6.</span>
-                  <span className="font-semibold">Arnica Montana</span>
+                <div className="mb-6">
+                  <div className="flex items-center mb-2">
+                    <span className="mr-2">6.</span>
+                    <span className="font-semibold">Arnica Montana</span>
+                  </div>
+                  <ul className="list-disc pl-5 text-gray-700">
+                    <li>Improves blood circulation to the scalp.</li>
+                    <li>Prevents hair thinning and strengthens roots.</li>
+                  </ul>
                 </div>
-                <ul className="list-disc pl-5 text-gray-700">
-                  <li>Improves blood circulation to the scalp.</li>
-                  <li>Prevents hair thinning and strengthens roots.</li>
-                </ul>
-              </div>
+              </div> */}
+               <div className="text-gray-600 text-sm md:text-base">
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-3 md:mb-4">Homeopathic Hair Growth Treatment</h2>
 
+              <ol className="list-decimal pl-4 md:pl-5">
+                <li className="mb-3 md:mb-4 text-justify">
+                  <span className="font-semibold">Homeopathic Hair Growth Treatment</span>
+                  <p>Homeopathy offers a natural and holistic approach to hair regrowth by treating the underlying causes of hair loss. Personalized remedies strengthen hair from within, addressing hormonal imbalances, nutritional deficiencies, and scalp health. Homeopathic treatments promote long-term results without harmful side effects.</p>
+                </li>
+                <li className="mb-3 md:mb-4 text-justify">
+                  <span className="font-semibold">Nutritional Support for Hair Growth</span>
+                  <p>A well-balanced diet rich in protein, iron, biotin, and essential fatty acids can support healthy hair growth. Supplements may also help replenish nutrient deficiencies and improve hair texture, strength, and shine.</p>
+                </li>
+                <li className="mb-3 md:mb-4 text-justify">
+                  <span className="font-semibold">Stress Management and Lifestyle Changes</span>
+                  <p>Managing stress through meditation, yoga, exercise, and proper sleep can prevent stress-related hair loss. Reducing caffeine and alcohol intake can also improve scalp health and hair growth.</p>
+                </li>
+                <li className="mb-3 md:mb-4 text-justify">
+                  <span className="font-semibold">Scalp Care and Hygiene</span>
+                  <p>Keeping the scalp clean and well-moisturized is essential for preventing infections and buildup. Natural oils like coconut, castor, and rosemary oil can improve scalp circulation and stimulate hair follicles.</p>
+                </li>
+                <li className="mb-3 md:mb-4 text-justify">
+                  <span className="font-semibold">Avoiding Harsh Chemical Treatments</span>
+                  <p>Limiting the use of chemical-based hair products, heat styling, and tight hairstyles can protect hair from further damage. Switching to mild, sulfate-free shampoos and herbal conditioners can support hair strength and regrowth.</p>
+                </li>
+              </ol>
+
+              <p className="mb-3 md:mb-4 text-justify">By addressing the root cause of hair loss and following a holistic treatment plan, individuals can achieve healthy, strong, and vibrant hair naturally.</p>
+            </div>
             </div>
           </div>
         )}

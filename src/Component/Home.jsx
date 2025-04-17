@@ -14,6 +14,7 @@ import p1 from '../images/p1.png';
 import OurHappyClients from './OurHappyClients';
 import women from '../images/women.png';
 import n3 from '../images/n3.png';
+import n4 from '../images/n4.png';
 
 
 library.add(faPhone, faHeart, faUser, faRunning, faBone, faCheck);
@@ -43,7 +44,7 @@ function Home() {
                         {/* Right Side: Doctor Image */}
                         <div className="md:w-1/2">
                             <img src={women} alt="Doctor" className=" w-full h-auto object-cover" />
-
+                             <p className="md:text-xl lg:text-3xl text-[#A5487D]  font-semibold mt-3 flex justify-center"> BHMS  M.D ( Pursuing)  </p>   
                         </div>
                     </div>
 
@@ -89,11 +90,12 @@ function Home() {
                             {/* Cardiology */}
                             <div className="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
                                 <div className="text-5xl text-gray-700 mb-4">
-                                    <FontAwesomeIcon icon="heart" />
+                                    {/* <FontAwesomeIcon icon="heart" /> */}
+                                    <img src={n4} className='w-15 h-15 '></img>
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-800 mb-2">Cardiology</h3>
+                                <h3 className="text-xl font-semibold text-gray-800 mb-2">stomach troubles</h3>
                                 <p className="text-gray-600 text-sm">
-                                    Branch of medicine that concerns diseases and disorders of the heart.
+                                Conditions concerned with gastric troubles.
                                 </p>
                             </div>
 

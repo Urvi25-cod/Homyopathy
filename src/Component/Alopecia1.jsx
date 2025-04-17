@@ -694,7 +694,7 @@ const Alopecia1 = () => {
                                 </section>
 
                                 {/* Common Skin Conditions & Remedies */}
-                                <section className="mb-4 md:mb-6">
+                                {/* <section className="mb-4 md:mb-6">
                                     <h2 className="text-xl font-semibold mb-2">Common Skin Conditions & Remedies</h2>
                                     <ul className="list-disc pl-4 md:pl-5 text-gray-700">
                                         <li>Acne & Pimples - Sulphur, Hepar Sulph, Silicea</li>
@@ -704,7 +704,7 @@ const Alopecia1 = () => {
                                         <li>Urticaria (Hives) - Apis Mellifica, Urtica Urens, Rhus Tox</li>
                                         <li>Fungal Infections - Thuja, Sulphur, Sepia</li>
                                     </ul>
-                                </section>
+                                </section> */}
 
                                 {/* Homeopathic Skin Care Tips */}
                                 <section>

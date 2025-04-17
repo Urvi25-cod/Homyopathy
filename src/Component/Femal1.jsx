@@ -250,7 +250,7 @@ const Femal1 = () => {
                         {/* Content for Homeopathic Treatment tab */}
                         <div className="text-gray-600">
                             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Homeopathic treatment of female Pattern Baldness</h2>
-                            <section>
+                            {/* <section>
                                 <p className="mb-4">Homeopathy helps slow down hair loss, strengthen hair roots, and improve scalp health. It works by addressing the root cause, like hormonal imbalance, stress, or nutritional deficiencies. While it may not completely regrow lost hair, it can reduce further hair thinning and improve hair texture.</p>
 
                                 <h2 className="text-2xl font-bold mb-4">Common Homeopathic Remedies for Female Pattern Baldness</h2>
@@ -278,7 +278,7 @@ const Femal1 = () => {
                                         Kali Carbonicum - Treats severe hair thinning with dryness and scalp sensitivity.
                                     </li>
                                 </ol>
-                            </section>
+                            </section> */}
                         </div>
                     </div>
                 )}

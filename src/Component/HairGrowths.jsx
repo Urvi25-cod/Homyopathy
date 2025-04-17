@@ -80,18 +80,18 @@ const HairGrowths = () => {
 
         {activeTab === 'Causes' && (
           <div>
-            {/* Content for Causes tab */}
+           
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-3 md:mb-4">
               Causes of Hair Growth
             </h2>
 
             <div className="text-gray-600 text-sm md:text-base text-justify">
-              {/* <p className="mb-3 md:mb-4">Hair loss and thinning can result from various internal and external factors. Identifying the root cause is essential for effective treatment. Below are some common causes of hair loss:</p> */}
+            
 
-              <section>
+              {/* <section>
                 <h2 className="text-xl font-bold mb-4 md:text-2xl"> Popular Hair Growth Treatments</h2>
 
-                {/* A. Homeopathic Hair Growth Treatments */}
+               
                 <div className="mb-4">
                   <h3 className="text-lg font-semibold mb-2 md:text-xl">A. Homeopathic Hair Growth Treatments</h3>
                   <ul className="list-disc pl-5 space-y-1">
@@ -103,7 +103,7 @@ const HairGrowths = () => {
                   </ul>
                 </div>
 
-                {/* B. Ayurvedic & Herbal Remedies */}
+           
                 <div className="mb-4">
                   <h3 className="text-lg font-semibold mb-2 md:text-xl">B. Ayurvedic & Herbal Remedies</h3>
                   <ul className="list-disc pl-5 space-y-1">
@@ -114,7 +114,7 @@ const HairGrowths = () => {
                   </ul>
                 </div>
 
-                {/* C. Medical & Cosmetic Treatments */}
+              
                 <div className="mb-4">
                   <h3 className="text-lg font-semibold mb-2 md:text-xl">C. Medical & Cosmetic Treatments</h3>
                   <ul className="list-disc pl-5 space-y-1">
@@ -125,7 +125,7 @@ const HairGrowths = () => {
                   </ul>
                 </div>
 
-                {/* D. Lifestyle & Dietary Changes for Hair Growth */}
+           
                 <div>
                   <h3 className="text-lg font-semibold mb-2 md:text-xl">D. Lifestyle & Dietary Changes for Hair Growth</h3>
                   <ul className="list-disc pl-5 space-y-1">
@@ -135,7 +135,64 @@ const HairGrowths = () => {
                     <li>Avoid Harsh Chemicals - Reduce use of sulfates, parabens, and heat styling</li>
                   </ul>
                 </div>
-              </section>
+              </section> */}
+                 <div className="">
+                  
+
+                  {/* Medical Conditions */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Medical Conditions</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Androgenetic alopecia: A common condition that causes hair loss due to hormonal imbalances.</li>
+                      <li>Thyroid disorders: Both hypothyroidism and hyperthyroidism can cause hair loss.</li>
+                      <li>Autoimmune diseases: Conditions like alopecia areata, lupus, and rheumatoid arthritis can cause hair loss.</li>
+                      <li>Skin conditions: Conditions like eczema, psoriasis, and dermatitis can cause hair loss.</li>
+                    </ul>
+                  </div>
+
+                  {/* Nutritional Deficiencies */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Nutritional Deficiencies</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Iron deficiency: Low iron levels can cause hair loss.</li>
+                      <li>Vitamin D deficiency: Vitamin D plays a role in hair growth, and deficiency can lead to hair loss.</li>
+                      <li>Protein deficiency: Lack of protein can cause hair loss.</li>
+                      <li>Other nutritional deficiencies: Deficiencies in vitamins like biotin, vitamin B12, and omega-3 fatty acids can also contribute to hair loss.</li>
+                    </ul>
+                  </div>
+
+                  {/* Lifestyle Factors */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Lifestyle Factors</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Stress: Physical or emotional stress can cause hair loss.</li>
+                      <li>Hairstyling: Excessive heat styling, tight hairstyles, and harsh chemical treatments can damage hair and lead to hair loss.</li>
+                      <li>Hair care: Using harsh hair care products or excessive shampooing can strip hair of its natural oils and lead to hair loss.</li>
+                    </ul>
+                  </div>
+
+                  {/* Hormonal Changes */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Hormonal Changes</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Pregnancy and childbirth: Hormonal changes during pregnancy and after childbirth can cause hair loss.</li>
+                      <li>Menopause: Hormonal changes during menopause can cause hair loss.</li>
+                    </ul>
+                  </div>
+
+                  {/* Other Factors */}
+                  <div className="p-6 bg-white">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">Other Factors</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>Genetics: Family history can play a role in hair loss.</li>
+                      <li>Aging: Hair loss is a natural part of aging.</li>
+                      <li>Medications: Certain medications, such as those used to treat depression, high blood pressure, and cancer, can cause hair loss.</li>
+                    </ul>
+                  </div>
+                </div>
+
+
+
             </div>
           </div>
         )}

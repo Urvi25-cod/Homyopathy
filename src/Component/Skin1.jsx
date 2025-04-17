@@ -7,10 +7,10 @@ const Skin1 = () => {
     const [faqOpen, setFaqOpen] = useState([false, false, false]);
 
     const [name, setName] = useState("")
-  const [phone, setPhone] = useState("")
-  const [date, setDate] = useState("")
-  const [message, setMessage] = useState("")
-  const [countryCode, setCountryCode] = useState("IND")
+    const [phone, setPhone] = useState("")
+    const [date, setDate] = useState("")
+    const [message, setMessage] = useState("")
+    const [countryCode, setCountryCode] = useState("IND")
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
@@ -26,12 +26,12 @@ const Skin1 = () => {
         e.preventDefault()
         // Handle form submission logic here
         console.log({ name, phone, date, message, countryCode })
-      };
+    };
 
     return (
         <div className="container mx-auto py-8 px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-start">
             <div>
-            <div className="border border-[#9d4d79] mb-4">
+                {/* <div className="border border-[#9d4d79] mb-4">
                     <div className="flex flex-wrap md:flex-nowrap w-full">
                         {['Overview', 'Causes', 'Symptoms', 'Homeopathic Tratment', 'Faqs'].map((tab, index, arr) => (
                             <button
@@ -45,56 +45,69 @@ const Skin1 = () => {
                             </button>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
-                {activeTab === 'Overview' && (
+                {/* {activeTab === 'Overview' && ( */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-3 md:mb-4">
                             Overview of Skin Treatment
                         </h2>
                         <div className="text-gray-600 text-sm md:text-base">
                             <p className="mb-4 md:mb-6">
-                                Skin treatments are procedures designed to improve skin health, address specific skin concerns, and enhance overall appearance. They range from basic skincare routines to advanced dermatological treatments.
+                                Homoeopathy can be used to treat various skin conditions, including:
                             </p>
-                            <ol className="list-decimal pl-4 md:pl-5">
-                                <li className="mb-2">
-                                    <span className="font-semibold">Cleansing & Exfoliation</span>
-                                    <p>Facials: Deep cleansing, steaming, and hydration for skin nourishment.</p>
-                                    <p>Microdermabrasion: Gently exfoliates to remove dead skin cells and improve texture.</p>
-                                    <p>Chemical Peels: Uses acids (AHA, BHA, or TCA) to remove damaged layers and boost regeneration.</p>
-                                </li>
-                                <li className="mb-2">
-                                    <span className="font-semibold">Acne & Scar Treatments</span>
-                                    <p>Laser Therapy: Reduces acne scars and inflammation.</p>
-                                    <p>Microneedling: Stimulates collagen production for smoother skin.</p>
-                                    <p>LED Light Therapy: Blue light kills acne-causing bacteria, red light aids healing.</p>
-                                </li>
-                                <li className="mb-2">
-                                    <span className="font-semibold">Anti-Aging & Skin Tightening</span>
-                                    <p>Botox & Dermal Fillers: Smooth wrinkles and restore facial volume.</p>
-                                    <p>RF (Radiofrequency) Therapy: Tightens skin and stimulates collagen.</p>
-                                    <p>Ultherapy: Uses ultrasound waves for non-surgical face lifting..</p>
-                                </li>
-                                <li className="mb-2">
-                                    <span className="font-semibold">Pigmentation & Brightening</span>
-                                    <p>Laser Resurfacing: Treats hyperpigmentation, sunspots, and uneven skin tone</p>
-                                    <p>Glutathione Therapy: An antioxidant treatment for skin lightening.</p>
-                                </li>
-                                <li className="mb-2">
-                                    <span className="font-semibold">Hydration & Skin Rejuvenation</span>
-                                    <p>HydraFacial: Combines cleansing, exfoliation, and hydration.</p>
-                                    <p>Oxygen Therapy: Infuses oxygen and serums for a fresh, glowing complexion.</p>
-                                </li>
-                                <li className="mb-2">
-                                    <span className="font-semibold"> Medical & Advanced Dermatology Treatments</span>
-                                    <p>PRP (Platelet-Rich Plasma): Uses blood plasma for skin rejuvenation.</p>
-                                    <p>Cryotherapy: Removes skin tags, warts, and unwanted growths.</p>
-                                </li>
-                            </ol>
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold mb-2 text-gray-700">
+                                    Common Skin Conditions 
+                                </h3>
+                                <ul className="list-disc pl-5 space-y-3">
+                                    <li>
+                                        <span className="font-semibold ">Acne:</span>{" "}
+                                        Homoeopathic remedies like Sulphur, Calcarea sulphurica, and Kali bromatum can help alleviate acne symptoms.
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">Eczema:</span>{" "}
+                                        Remedies like Graphites, Petroleum, and Rhus toxicodendron can help soothe and calm eczema-prone skin.
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">Psoriasis:</span>{" "}
+                                        Homoeopathic remedies like Arsenicum album, Sulphur, and Graphites can help manage psoriasis symptoms.
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">Skin allergies:</span>{" "}
+                                        Remedies like Urtica urens, Apis mellifica, and Rhus toxicodendron can help alleviate skin allergy symptoms.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {/* Principles of Homoeopathic Treatment */}
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold mb-2 text-gray-700">
+                                    Principles of Homoeopathic Treatment
+                                </h3>
+                                <ul className="list-disc pl-5 space-y-3">
+                                    <li>
+                                        <span className="font-semibold ">Individualized treatment:</span>{" "}
+                                        Homoeopathic remedies are chosen based on the individual's unique symptoms, personality, and characteristics.
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">Holistic approach:</span>{" "}
+                                        Homoeopathy treats the whole person, not just the skin condition.
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">Stimulating the body's natural healing processes:</span>{" "}
+                                        Homoeopathic remedies aim to stimulate the body's natural healing processes to promote recovery.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {/* Dermatology & Cosmetic Procedures */}
+                       
+
                         </div>
                     </div>
-                )}
-                {activeTab === 'Causes' && (
+                {/* )} */}
+                {/* {activeTab === 'Causes' && (
                     <div className="text-gray-600 text-sm md:text-base">
                         <h2 className="text-2xl font-semibold text-gray-800 mb-3 md:mb-4">
                             Causes of Skin treatment
@@ -412,94 +425,94 @@ const Skin1 = () => {
                             </div>
                         </div>
                     </div>
-                )}
+                )} */}
             </div>
 
             <div className="max-w-md mx-auto p-6">
-      <div className="border border-pink-300 rounded-lg p-6">
-        <h2 className="text-2xl font-bold text-center mb-6">Get In Touch</h2>
+                <div className="border border-pink-300 rounded-lg p-6">
+                    <h2 className="text-2xl font-bold text-center mb-6">Get In Touch</h2>
 
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 mb-2">
-              Full name
-            </label>
-            <input
-              type="text"
-              id="name"
-              placeholder="First name"
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-pink-400"
-              value={name}
-              onChange={e => setName(e.target.value)}
-            />
-          </div>
+                    <form onSubmit={handleSubmit}>
+                        <div className="mb-4">
+                            <label htmlFor="name" className="block text-gray-700 mb-2">
+                                Full name
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="First name"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-pink-400"
+                                value={name}
+                                onChange={e => setName(e.target.value)}
+                            />
+                        </div>
 
-          <div className="mb-4">
-            <label htmlFor="phone" className="block text-gray-700 mb-2">
-              Phone number
-            </label>
-            <div className="flex">
-              <div className="relative">
-                <button
-                  type="button"
-                  className="flex items-center justify-between px-3 py-3 border border-gray-300 rounded-l-lg bg-white text-gray-700 focus:outline-none"
-                >
-                  <span>{countryCode}</span>
-                  <ChevronDown className="ml-1 h-4 w-4" />
-                </button>
-                <div className="hidden absolute top-full left-0 mt-1 w-full bg-white border border-gray-300 rounded-md shadow-lg z-10">
-                  <div
-                    className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() => setCountryCode("IND")}
-                  >
-                    IND
-                  </div>
-                  <div
-                    className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() => setCountryCode("USA")}
-                  >
-                    USA
-                  </div>
-                  <div
-                    className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() => setCountryCode("UK")}
-                  >
-                    UK
-                  </div>
-                </div>
-              </div>
-              <input
-                type="tel"
-                id="phone"
-                placeholder="+91 9999 999 999"
-                // className="px-4 py-3 border border-gray-300 rounded-r-lg focus:outline-none focus:ring-pink-400"
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent"
-                value={phone}
-                onChange={e => setPhone(e.target.value)}
-              />
-            </div>
-          </div>
+                        <div className="mb-4">
+                            <label htmlFor="phone" className="block text-gray-700 mb-2">
+                                Phone number
+                            </label>
+                            <div className="flex">
+                                <div className="relative">
+                                    <button
+                                        type="button"
+                                        className="flex items-center justify-between px-3 py-3 border border-gray-300 rounded-l-lg bg-white text-gray-700 focus:outline-none"
+                                    >
+                                        <span>{countryCode}</span>
+                                        <ChevronDown className="ml-1 h-4 w-4" />
+                                    </button>
+                                    <div className="hidden absolute top-full left-0 mt-1 w-full bg-white border border-gray-300 rounded-md shadow-lg z-10">
+                                        <div
+                                            className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                                            onClick={() => setCountryCode("IND")}
+                                        >
+                                            IND
+                                        </div>
+                                        <div
+                                            className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                                            onClick={() => setCountryCode("USA")}
+                                        >
+                                            USA
+                                        </div>
+                                        <div
+                                            className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                                            onClick={() => setCountryCode("UK")}
+                                        >
+                                            UK
+                                        </div>
+                                    </div>
+                                </div>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="+91 9999 999 999"
+                                    // className="px-4 py-3 border border-gray-300 rounded-r-lg focus:outline-none focus:ring-pink-400"
+                                    className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent"
+                                    value={phone}
+                                    onChange={e => setPhone(e.target.value)}
+                                />
+                            </div>
+                        </div>
 
-          <div className="mb-4">
-            <label htmlFor="date" className="block text-gray-700 mb-2">
-              Select date
-            </label>
-            <div className="relative">
-              <input
-              id="date"
-              type="date"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-pink-400 bg-white"
-                value={date}
-                onChange={e => setDate(e.target.value)}
-              >
-                
-              </input>
-              {/* <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                        <div className="mb-4">
+                            <label htmlFor="date" className="block text-gray-700 mb-2">
+                                Select date
+                            </label>
+                            <div className="relative">
+                                <input
+                                    id="date"
+                                    type="date"
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-pink-400 bg-white"
+                                    value={date}
+                                    onChange={e => setDate(e.target.value)}
+                                >
+
+                                </input>
+                                {/* <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                 <ChevronDown className="h-5 w-5 text-gray-500" />
               </div> */}
-            </div>
-          </div>
-          {/* <div>
+                            </div>
+                        </div>
+                        {/* <div>
            <label className="block text-gray-700 mb-2 font-medium">
               Select date
             </label>
@@ -511,28 +524,28 @@ const Skin1 = () => {
             />
           </div> */}
 
-          <div className="mb-6">
-            <label htmlFor="message" className="block text-gray-700 mb-2">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows={4}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-pink-400"
-              value={message}
-              onChange={e => setMessage(e.target.value)}
-            ></textarea>
-          </div>
+                        <div className="mb-6">
+                            <label htmlFor="message" className="block text-gray-700 mb-2">
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                rows={4}
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-pink-400"
+                                value={message}
+                                onChange={e => setMessage(e.target.value)}
+                            ></textarea>
+                        </div>
 
-          <button
-            type="submit"
-            className="w-full bg-[#b05888] text-white py-3 px-4 rounded-lg hover:bg-[#9d4d79] transition-colors"
-          >
-            Book an appointment
-          </button>
-        </form>
-      </div>
-    </div>
+                        <button
+                            type="submit"
+                            className="w-full bg-[#b05888] text-white py-3 px-4 rounded-lg hover:bg-[#9d4d79] transition-colors"
+                        >
+                            Book an appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     );
 };

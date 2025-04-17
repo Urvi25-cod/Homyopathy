@@ -15,7 +15,6 @@ function Header() {
 
   const [isSearchOpen, setIsSearchOpen] = useState(false); // Saearch functions
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);// mobile saerch 
-  
   const mobileMenuRef = useRef(null);
 
   return (
@@ -82,20 +81,20 @@ function Header() {
 
               {isDesktopDropdownOpen && (
                 <div className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md z-50">
-                  <Link to='/HairGrowth' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Hair Growth Treatment</Link>
-                  <Link to='/HairLoss' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Hair Loss Treatment</Link>
-                  <Link to='/Male' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Male Pattern Baldness</Link>
-                  <Link to='/Femal' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Female Pattern Baldness</Link>
-                  <Link to='/Alopecia' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Alopecia</Link>
-                  <Link to='/Dandruff' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Dandruff Treatment</Link>
-                  <Link to='/SkinDieses' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white">Skin Disease </Link>
+                  <Link to='/HairGrowth' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Hair Growth Treatment</Link>
+                  <Link to='/HairLoss' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Hair Loss Treatment</Link>
+                  <Link to='/Male' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Male Pattern Baldness</Link>
+                  <Link to='/Femal' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Female Pattern Baldness</Link>
+                  <Link to='/Alopecia' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Alopecia</Link>
+                  <Link to='/Dandruff' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Dandruff Treatment</Link>
+                  <Link to='/SkinDieses' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Skin Disease </Link>
+                   <Link to='/OtherDiseases' className="block px-4 py-2 over:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Other Diseases </Link>
                 </div>
               )}
             </div>
 
             <Link to="/Skin" className="hover:text-[#9d4d79]">Skin Treatment</Link>
             <Link to="/About" className="hover:text-[#9d4d79]">About</Link> 
-            <Link to="/Gynecological" className="hover:text-[#9d4d79]">Gynecological</Link>
             <Link to="/ContactForm" className="hover:text-[#9d4d79]">Contact</Link>
           </div>
         </div>
@@ -144,15 +143,12 @@ function Header() {
               <Link to='/Alopecia' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsMenuOpen(false)}>Alopecia</Link>
               <Link to='/Dandruff' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsMenuOpen(false)}>Dandruff Treatment</Link>
               <Link to='/SkinDieses' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsMenuOpen(false)}>Dandruff Treatment</Link>
-              
             </div>
           )}
 
           <Link to="/Skin" className="hover:text-purple-500" onClick={() => setIsMenuOpen(false)}>Skin Treatment</Link>
           <Link to="/About" className="hover:text-purple-500" onClick={() => setIsMenuOpen(false)}>About</Link>
-          <Link to="/Gynecological" className="hover:text-purple-500" onClick={() => setIsMenuOpen(false)}>Gynecological</Link>
           <Link to="/ContactForm" className="hover:text-purple-500" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-        
         </div>
       </div>
     </header>
@@ -160,4 +156,3 @@ function Header() {
 }
 
 export default Header;
-
