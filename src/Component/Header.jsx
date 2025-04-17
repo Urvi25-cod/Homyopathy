@@ -88,7 +88,7 @@ function Header() {
                   <Link to='/Alopecia' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Alopecia</Link>
                   <Link to='/Dandruff' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Dandruff Treatment</Link>
                   <Link to='/SkinDieses' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Skin Disease </Link>
-                   <Link to='/OtherDiseases' className="block px-4 py-2 over:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Other Diseases</Link>
+                   <Link to='/OtherDiseases' className="block px-4 py-2 text-sm hover:bg-[#9d4d79] hover:text-white" onClick={() => setIsDesktopDropdownOpen(ture)}>Other Diseases</Link>
                 </div>
               )}
             </div>
